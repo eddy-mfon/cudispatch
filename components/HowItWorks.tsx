@@ -1,10 +1,11 @@
 import React from 'react';
-import { Rocket, ArrowRight } from 'lucide-react';
+import { Rocket, ArrowRight, UserPlus, LayoutDashboard, Bell, CheckCircle } from 'lucide-react';
+import BackgroundPattern from './BackgroundPattern';
 
 const HowItWorks: React.FC = () => {
     return (
-        <section className="bg-[#1A1A1A] py-32 relative overflow-hidden font-sans">
-
+        <section id="how-it-works" className="py-24 bg-black relative overflow-hidden">
+            <BackgroundPattern className="text-white" />
             {/* Decorative Rocket (Top Right) */}
             <div className="absolute top-10 right-0 p-4 opacity-100 hidden lg:block animate-float">
                 <div className="relative w-48 h-48">
@@ -124,12 +125,12 @@ const HowItWorks: React.FC = () => {
                 <div className="mt-32 flex flex-col items-center animate-slide-up-delay-3 opacity-0">
                     <div className="relative group">
                         <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-none blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                        <button onClick={() => window.scrollTo(0, 0)} className="relative inline-flex items-center justify-center px-12 py-5 text-lg font-bold text-black bg-white rounded-none hover:bg-gray-50 transition-all duration-200 hover:scale-[1.02]">
+                        <button onClick={() => window.scrollTo(0, 0)} className="relative inline-flex items-center justify-center px-12 py-5 text-lg font-bold text-black bg-white rounded-none hover:bg-gray-100 transition-all duration-200 hover:scale-[1.02]">
                             Get Started for Free
                             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>
                     </div>
-                    <p className="mt-6 text-gray-500 text-sm font-medium">No credit card required • Free for students</p>
+                    <p className="mt-6 text-gray-400 text-sm font-medium">No credit card required • Free for students</p>
                 </div>
 
             </div>

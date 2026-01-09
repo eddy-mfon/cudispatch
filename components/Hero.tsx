@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Search, Bell, Home, Calendar, MessageSquare, Settings, BookOpen, Clock, AlertTriangle, PieChart, Hand } from 'lucide-react';
+import BackgroundPattern from './BackgroundPattern';
 
 const Hero: React.FC = () => {
     return (
@@ -9,11 +10,9 @@ const Hero: React.FC = () => {
             <div className="absolute top-20 left-10 w-64 h-64 bg-cu-blue/20 rounded-full blur-3xl opacity-50 -z-10 animate-pulse-slow"></div>
             <div className="absolute bottom-20 right-10 w-72 h-72 bg-cu-yellow/30 rounded-full blur-3xl opacity-50 -z-10 animate-pulse-slow"></div>
 
+            <BackgroundPattern />
+
             <div className="max-w-4xl mx-auto space-y-8 relative z-10">
-                <div className="inline-flex items-center px-4 py-1.5 rounded-none border border-gray-200 bg-white/50 backdrop-blur-sm text-sm font-medium text-gray-600 mb-4 animate-slide-up opacity-0">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
-                    v2.0 is now live for all students
-                </div>
 
                 <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 tracking-tight leading-[1.1] animate-slide-up-delay-1 opacity-0">
                     Your favourite <span className="text-gray-400">info pal</span> <br className="hidden md:block" />
@@ -25,11 +24,11 @@ const Hero: React.FC = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4 animate-slide-up-delay-3 opacity-0">
-                    <a href="#contact" className="group inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-black rounded-none hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    <a href="#contact" className="group inline-flex items-center justify-center px-8 py-3 text-base font-bold text-white bg-black rounded hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
                         Get Started
                         <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </a>
-                    <a href="#features" className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-gray-700 bg-white border border-gray-200 rounded-none hover:bg-gray-50 transition-all duration-300 hover:border-gray-300 hover:-translate-y-1 hover:shadow-md">
+                    <a href="#features" className="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-gray-700 bg-white border border-gray-200 rounded hover:bg-gray-50 transition-all duration-300 hover:border-gray-300 hover:-translate-y-1 hover:shadow-md">
                         View Features
                     </a>
                 </div>

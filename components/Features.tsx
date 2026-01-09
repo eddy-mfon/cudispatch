@@ -1,10 +1,15 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Zap, Clock, Calendar, MessageSquare, Shield, Users } from 'lucide-react';
+import { Feature } from '../types';
+import BackgroundPattern from './BackgroundPattern';
 
 const Features: React.FC = () => {
     return (
-        <section id="features" className="py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="features" className="py-24 bg-white relative overflow-hidden">
+            {/* Background Gradient Blob */}
+            <div className="absolute top-40 left-0 w-full h-[500px] bg-gradient-to-b from-transparent via-blue-50/50 to-transparent -z-10"></div>
+            <BackgroundPattern />
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 {/* Header Section */}
                 <div className="flex flex-col md:flex-row md:items-start justify-between mb-16 gap-8 animate-slide-up opacity-0">
